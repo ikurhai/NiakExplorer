@@ -1,0 +1,9 @@
+c:\users\maxime\documents\visual studio 2013\Projects\Hello\Hello\bin\Debug\Hello.exe.config
+c:\users\maxime\documents\visual studio 2013\Projects\Hello\Hello\obj\Debug\Hello.csprojResolveAssemblyReference.cache
+c:\users\maxime\documents\visual studio 2013\Projects\Hello\Hello\obj\Debug\Hello.Form1.resources
+c:\users\maxime\documents\visual studio 2013\Projects\Hello\Hello\obj\Debug\Hello.Properties.Resources.resources
+c:\users\maxime\documents\visual studio 2013\Projects\Hello\Hello\obj\Debug\Hello.csproj.GenerateResource.Cache
+c:\users\maxime\documents\visual studio 2013\Projects\Hello\Hello\bin\Debug\Hello.exe
+c:\users\maxime\documents\visual studio 2013\Projects\Hello\Hello\bin\Debug\Hello.pdb
+c:\users\maxime\documents\visual studio 2013\Projects\Hello\Hello\obj\Debug\Hello.exe
+c:\users\maxime\documents\visual studio 2013\Projects\Hello\Hello\obj\Debug\Hello.pdb

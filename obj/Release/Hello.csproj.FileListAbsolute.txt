@@ -1,0 +1,8 @@
+c:\users\maxime\documents\visual studio 2013\Projects\Hello\Hello\bin\Release\Hello.exe.config
+c:\users\maxime\documents\visual studio 2013\Projects\Hello\Hello\bin\Release\Hello.exe
+c:\users\maxime\documents\visual studio 2013\Projects\Hello\Hello\bin\Release\Hello.pdb
+c:\users\maxime\documents\visual studio 2013\Projects\Hello\Hello\obj\Release\Hello.Form1.resources
+c:\users\maxime\documents\visual studio 2013\Projects\Hello\Hello\obj\Release\Hello.Properties.Resources.resources
+c:\users\maxime\documents\visual studio 2013\Projects\Hello\Hello\obj\Release\Hello.csproj.GenerateResource.Cache
+c:\users\maxime\documents\visual studio 2013\Projects\Hello\Hello\obj\Release\Hello.exe
+c:\users\maxime\documents\visual studio 2013\Projects\Hello\Hello\obj\Release\Hello.pdb
