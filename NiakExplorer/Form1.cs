@@ -42,13 +42,32 @@ namespace NiakExplorer
                 treeNode.Tag = r;
                 treeNode.ImageIndex = 0;
                 treeNode.SelectedImageIndex = 0;
-                treeNode.Nodes.Add(new TreeNode() { Text = "DUMMY", Tag = "DUMMY"});
+                treeNode.Nodes.Add(new TreeNode() { Text = "DUMMY", Tag = "DUMMY" });
 
                 treeView.Nodes.Add(treeNode);
             }
 
-            // Ajout de l'événement BeforeExpand
+            // Ajout des événements
             treeView.BeforeExpand += tw_BeforeExpand;
+            treeView.AfterSelect += treeView_AfterSelect;
+        }
+
+        void treeView_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            ListBox listBox = LB_Preview;
+            Label label = L_NbLigne;
+            object tag = e.Node.Tag;
+
+            if (tag.GetType() == typeof(Fichier))
+            {
+                Fichier f = (Fichier)tag;
+                listBox.Items.Clear();
+                foreach (string ligne in f.Contenu)
+                {
+                    listBox.Items.Add(ligne);
+                }
+                label.Text = f.Contenu.Count() + " ligne(s).";
+            }
         }
 
 
@@ -73,10 +92,10 @@ namespace NiakExplorer
 
                     treeNode.Nodes.Add(newTreeNode);
                 }
-                foreach (string f in parent.Fichiers)
+                foreach (Fichier f in parent.Fichiers)
                 {
                     newTreeNode = new TreeNode();
-                    newTreeNode.Text = f;
+                    newTreeNode.Text = f.Nom;
                     newTreeNode.Tag = f;
                     newTreeNode.ImageIndex = 1;
                     newTreeNode.SelectedImageIndex = 1;
@@ -85,5 +104,6 @@ namespace NiakExplorer
                 }
             }
         }
+
     }
 }

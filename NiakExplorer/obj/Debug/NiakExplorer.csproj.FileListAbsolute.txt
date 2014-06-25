@@ -6,3 +6,4 @@ c:\users\maxime\documents\visual studio 2013\Projects\Hello\Hello\obj\Debug\Hell
 c:\users\maxime\documents\visual studio 2013\Projects\Hello\Hello\obj\Debug\NiakExplorer.csproj.GenerateResource.Cache
 c:\users\maxime\documents\visual studio 2013\Projects\Hello\Hello\obj\Debug\Hello.exe
 c:\users\maxime\documents\visual studio 2013\Projects\Hello\Hello\obj\Debug\Hello.pdb
+c:\users\maxime\documents\visual studio 2013\Projects\Hello\Hello\obj\Debug\NiakExplorer.csprojResolveAssemblyReference.cache

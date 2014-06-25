@@ -12,11 +12,11 @@ namespace NiakExplorer.Utils
     public class Dossier
     {
 
-        public string Nom { get; set; }
-        public Dossier Parent { get; set; }
+        public string Nom { get; private set; }
+        public Dossier Parent { get; private set; }
         private bool AJour;
         private List<Dossier> dossiers { get; set; }
-        private List<string> fichiers { get; set; }
+        private List<Fichier> fichiers { get; set; }
         public List<Dossier> Dossiers
         {
             get
@@ -32,7 +32,7 @@ namespace NiakExplorer.Utils
                 this.dossiers = value;
             }
         }
-        public List<string> Fichiers
+        public List<Fichier> Fichiers
         {
             get
             {
@@ -69,7 +69,7 @@ namespace NiakExplorer.Utils
             this.Parent = null;
             this.AJour = false;
             this.Dossiers = new List<Dossier>();
-            this.Fichiers = new List<string>();
+            this.Fichiers = new List<Fichier>();
         }
 
         public Dossier(string nom, Dossier parent)
@@ -78,7 +78,7 @@ namespace NiakExplorer.Utils
             this.Parent = parent;
             this.AJour = false;
             this.Dossiers = new List<Dossier>();
-            this.Fichiers = new List<string>();
+            this.Fichiers = new List<Fichier>();
         }
 
 
@@ -93,7 +93,7 @@ namespace NiakExplorer.Utils
                 }
                 foreach (FileInfo fichier in dossier.GetFiles())
                 {
-                    this.fichiers.Add(fichier.Name);
+                    this.fichiers.Add(new Fichier(fichier.Name, fichier.Extension, this));
                 }
             }
             catch (Exception e)
